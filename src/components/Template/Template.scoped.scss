@@ -1,0 +1,15 @@
+.app {
+  padding: 2.5rem 15vw;
+  background: var(--bg-color);
+  transition: background 0.5s ease;
+  .outlet-container {
+    margin: 2.5rem auto;
+    max-width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .app {
+    margin: 0 -2rem;
+  }
+}
