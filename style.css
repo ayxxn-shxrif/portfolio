@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fef9f8;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+.profile-picture {
+  height: 317px;
+  width: 317px;
+  
+  border-radius: 80%;
+
+  display: block;
+  margin: auto;
+  max-width: 50%;
+
+
+}
+
+.name{
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #0d0d0d;
+  margin-top: 2px;
+  margin-bottom: 6px;
+}
+
+.role{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #0d0d0d;
+  margin: 0px
+}
+
+.website{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  text-align: center;
+  color: #F5F5F5;
+  margin-top: 9px;
+  margin-bottom: 15px;
+}
+
+.social-buttons {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+button{
+    font-size: 14px;
+    line-height: 16px;
+    padding: 9px 13px 9px 11px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    width: 112px;
+}
+
+.email-text{
+    background: #ffff;
+    border: 1px solid #0d0d0d ;
+    padding: 0px;
+    margin: 0px;
+}
+
+.linkedln-text{
+    color: #ffff;
+    background: #5093E2;
+}
+
+.email-icon{
+   font-size: 14px;
+   margin-right: 4px;
+}
+
+.linkedin-icon {
+   font-size: 14px; 
+    margin-right: 4px;
+}
+
+.about-section {
+   padding: 0 35px;
+   color : 0d0d0d;
+}
+
+.about-title {
+   font-weight: 700;
+   font-size: 16px;
+   color: #0d0d0d;
+   margin-top: 33px;
+   margin-bottom: 5px;
+}
+
+.about-text {
+   font-style: normal;
+   font-weight: 900;
+   font-size: 15.24px;
+   line-height: 20.36px;
+   color: #0d0d0d;
+   margin:0;
+}
+
+.interests-section {
+   padding: 0 35px;
+   padding-bottom: 40px;
+}
+
+.interests-title {
+   font-weight: 700;
+   font-size: 16px;
+   color: #0d0d0d;
+   margin-top: 20px;
+   margin-bottom: 5px;
+}
+
+.interests-text {
+   font-style: normal;
+   font-weight: 900;
+   font-size: 16.24px;
+   line-height: 20.36px;
+   color: #0d0d0d;
+   margin: 0;
+}
+
+footer{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px
+  
+  
+ 
+   
+}
+
+.icons{
+  display: flex
+}
+.icons i 
+  
+  {
+  
+  margin-right: 10px;
+  margin-left: 10px;
+  display: flex;
+  
+  
+}
+
+
+.social-icon{
+   height: 25px;
+   width: 25px;
+   font-size: 35px;
+   color: #0d0d0d;
+   justify-content: space-evenly;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.projectText {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 4rem;
+}
+
+.watermark {
+  position: absolute;
+  top: 200px;
+  left: -90px;
+  transform: rotate(-90deg);
+  color: #666666;
+  font-size: 6rem;
+  opacity: 0.2;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: row ;
+  align-content: space-between;
+  justify-content: center;
+  margin: 0 auto;
+  z-index: 1;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 15rem;
+  min-height: 2rem;
+  background-color: #ffff;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  /* text-align: center; */
+}
+.imageContainer {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 5px;
+  overflow: hidden;
+   background-color: #136b7e; 
+}
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /* height: 100%; */
+}
+.project-details {
+  padding: 0.1rem 0;
+  
+}
+.project-details h2 {
+  color: #0d0d0d;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+.project-details p {
+  color: #0d0d0d;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.project-links {
+   display: flex;
+  /* flex-direction: column; */
+  column-gap: 0.5rem;
+}
+.project-links a {
+  display: flex;
+  gap: 10px;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  padding: 0.5rem 1.2rem;
+  font-size: 16px;
+  color: #0d0d0d;
+  border-radius: 8px;
+  border: 1px solid #1c1829;
+}
+
+
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  color: #0d0d0d;;
+  padding: 0 20px;
+}
+
+header h4 {
+  color: #0d0d0d;
+}
+header h4:hover {
+  color: #ccc;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav a {
+  color: #0d0d0d;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+header nav a:hover {
+  color: #ccc;
+}
