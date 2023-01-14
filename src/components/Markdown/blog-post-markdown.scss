@@ -1,0 +1,205 @@
+// Made by Thomas Kim
+// react-markdown custom styling by scss.
+
+.blog-post-markdown {
+  // ===== COLORS =====
+  --code-block-light: #fafafa;
+  --code-block-dark: #303030;
+  --table-border: #d8d8d8;
+  --table-head: #eaeaea;
+  --table-body: #fdfdfd;
+  --table-border-radius: 10px;
+
+  @at-root [data-theme="dark"] & {
+    // reconsider table colors
+    --table-border: #343434;
+    --table-head: #161616;
+    --table-body: #222222;
+  }
+
+  // ===== FONT COLOR ======
+  color: var(--font-color);
+  transition: color 0.5s ease;
+
+  // ===== LINKS =====
+  a {
+    color: var(--font-color);
+    transition: color 0.5s ease;
+  }
+
+  // ===== BLOCK QUOTES =====
+  blockquote {
+    position: relative;
+    margin: 0;
+    margin-left: 15px;
+    font-style: italic;
+    &:before {
+      content: "";
+      border-left: 4px solid var(--font-color);
+      transition: border-left 0.5s ease;
+      position: absolute;
+      left: -15px;
+      top: 0;
+      bottom: 0;
+    }
+  }
+
+  // ===== CODE BLOCKS =====
+  .codeElementLight {
+    z-index: 1;
+    aside {
+      background: var(--code-block-light) !important;
+      code {
+        background: var(--code-block-light) !important;
+      }
+    }
+  }
+  .codeElementDark {
+    aside {
+      background: var(--code-block-dark) !important;
+      code {
+        background: var(--code-block-dark) !important;
+      }
+    }
+  }
+
+  // ===== TABLES =====
+  table {
+    border-spacing: 0;
+    width: 100%;
+    th,
+    td {
+      border: 2px solid var(--table-border);
+      padding: 8px 16px;
+    }
+    /* the first 'th' within the first 'tr' of the 'thead': */
+    thead tr:first-child th:first-child {
+      border-radius: var(--table-border-radius) 0 0 0;
+    }
+    /* the last 'th' within the first 'tr' of the 'thead': */
+    thead tr:first-child th:last-child {
+      border-radius: 0 var(--table-border-radius) 0 0;
+    }
+    /* the first 'td' within the last 'tr' of the 'tbody': */
+    tbody tr:last-child td:first-child {
+      border-radius: 0 0 0 var(--table-border-radius);
+    }
+    /* the last 'td' within the last 'tr' of the 'tbody': */
+    tbody tr:last-child td:last-child {
+      border-radius: 0 0 var(--table-border-radius) 0;
+    }
+    thead + tbody tr td,
+    tr + tr td {
+      border-top: 0;
+    }
+
+    // border adjustment
+    tr th + th,
+    tr td + td {
+      border-left: 0;
+    }
+
+    // color
+    th {
+      background: var(--table-head);
+    }
+    td {
+      background: var(--table-body);
+    }
+    th,
+    td,
+    tr {
+      transition: border 0.5s ease, background 0.5s ease;
+    }
+  }
+
+  // ===== CHECKBOX =====
+  // checkbox from https://codepen.io/brankocee/pen/QWwmrvM
+  input[type="checkbox"] {
+    position: relative;
+    border: 2px solid var(--primary-color);
+    transition: border 0.5s ease;
+    border-radius: 2px;
+    background: none;
+    cursor: pointer; // not sure if this is needed because checkboxes are disabled
+    line-height: 0;
+    margin: 0 0.4em 0 0;
+    outline: 0;
+    padding: 0 !important;
+    vertical-align: text-top;
+    height: 20px;
+    width: 20px;
+    -webkit-appearance: none;
+    &:checked {
+      background-color: var(--primary-color);
+      transition: background-color 0.5s ease, border 0.5s ease;
+      &:before {
+        content: "";
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        width: 4px;
+        height: 10px;
+        border: solid var(--bg-color);
+        transition: border 0.5s ease;
+        border-width: 0 2px 2px 0;
+        margin: -1px -1px 0 -1px;
+        transform: rotate(45deg) translate(-50%, -50%);
+        z-index: 2;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .blog-post-markdown {
+    h1 {
+    }
+    h2 {
+    }
+    h3 {
+    }
+    h4 {
+    }
+    h5 {
+    }
+    h6 {
+    }
+    p {
+      font-size: 14px;
+    }
+    li {
+      font-size: 14px;
+    }
+    th,
+    td {
+      padding: 4px 8px !important;
+      font-size: 14px;
+    }
+    input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      margin-top: 2px;
+    }
+    blockquote {
+      margin-left: 13px;
+      &:before {
+        border-left: 3.5px solid var(--font-color);
+        left: -13px;
+      }
+    }
+    .codeElementDark,
+    .codeElementLight {
+      aside {
+        padding: 0.85em !important;
+        line-height: 1.33 !important;
+        code {
+          line-height: 1.33 !important;
+          span {
+            font-size: 13px !important;
+          }
+        }
+      }
+    }
+  }
+}

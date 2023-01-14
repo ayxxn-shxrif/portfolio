@@ -11,6 +11,7 @@ import { Template } from "./components/index";
 import {
   Home,
   FourZeroFour,
+  About,
 } from "./pages/index";
 import "./App.css";
 
@@ -25,7 +26,7 @@ function App() {
       <Routes>
         <Route element={<Template />}>
           <Route index element={<Home />} />
-          
+          <Route path="/about" element={<About />} />
         </Route>
         <Route path="*" element={<FourZeroFour />} />
       </Routes>

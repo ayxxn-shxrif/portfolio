@@ -1,0 +1,116 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color);
+  transition: color 0.5s ease;
+  h1 {
+    font-size: 45px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .about-image {
+    width: 25vw;
+    margin-left: 60px;
+    max-height: 600px;
+  }
+  a {
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .grobo-link {
+    color: #a3cf5f;
+  }
+  .enpowered-link {
+    color: #f6cb2a;
+  }
+  .fourstar-link {
+    color: #ec3e3d;
+  }
+  .square-link {
+    color: var(--font-color);
+  }
+  .portfolio-link {
+    color: var(--primary-color);
+    transition: color 0.5s ease;
+  }
+  button {
+    display: none;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: -30px;
+    border: none;
+    border-radius: 17.5px;
+    height: 35px;
+    width: 130px;
+    background: var(--font-color);
+    color: var(--bg-color);
+    font-weight: 700;
+    font-size: 12px;
+    transition: transform 0.1s ease, color 0.5s ease;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about-container {
+    flex-direction: column;
+    h1 {
+      font-size: 26px;
+    }
+    p {
+      font-size: 14px;
+    }
+    .about-image {
+      margin-top: 1rem;
+      margin-bottom: -1rem;
+      margin-left: 0;
+      width: 100%;
+      max-height: none;
+    }
+    button {
+      display: block;
+    }
+  }
+}
+
+[data-theme="light"] .loading {
+  filter: invert(9%) sepia(15%) saturate(7%) hue-rotate(318deg) brightness(102%)
+    contrast(93%);
+  transition: filter 0.5s ease;
+}
+[data-theme="dark"] .loading {
+  filter: invert(100%) sepia(68%) saturate(38%) hue-rotate(155deg)
+    brightness(115%) contrast(90%);
+  transition: filter 0.5s ease;
+}
+
+.download-container {
+  margin-top: 36px;
+  text-align: center;
+  .download-heading {
+    margin-bottom: 10px;
+    color: var(--font-color);
+    transition: color 0.5s ease;
+  }
+  .download-button {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--font-color);
+    color: var(--bg-color);
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 100px;
+    padding: 8px 16px;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.075);
+    }
+    transition: color 0.5s ease, background 0.5s ease, transform 0.1s ease;
+  }
+}
