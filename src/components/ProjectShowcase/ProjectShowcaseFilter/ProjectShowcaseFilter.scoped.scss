@@ -1,0 +1,35 @@
+.project-showcase-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  .filter-button {
+    padding: 5px 20px;
+    border: none;
+    border-radius: 100px;
+    background: var(--font-color);
+    color: var(--bg-color);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.115);
+    }
+    transition: transform 0.1s ease, background 0.5s ease, color 0.5s ease;
+  }
+  .filter-button-selected {
+    background: var(--primary-color);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .project-showcase-filter {
+    .filter-button {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100px;
+    }
+  }
+}

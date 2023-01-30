@@ -1,0 +1,80 @@
+.project-showcase-item-container {
+  a {
+    text-decoration: none;
+  }
+  background: var(--bg-color);
+  border: 1px solid var(--font-color);
+  border-radius: 25px;
+  height: 325px;
+  width: 250px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.1s ease, transform 0.1s ease, border 0.5s ease,
+    background 0.5s ease;
+  &:hover {
+    transform: scale(1.035);
+  }
+  .image-container {
+    height: 55%;
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .text-container {
+    margin-top: -6px;
+    margin-left: 8px;
+    h4,
+    p {
+      color: var(--font-color);
+      transition: color 0.5s ease;
+    }
+    h4 {
+      line-height: 0;
+      font-size: 17px;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 13px;
+      margin-bottom: -4px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .project-showcase-item-container {
+    width: 100%;
+    // height: 300px;
+    border-radius: 30px;
+    .image-container {
+      height: 60%;
+    }
+    .text-container {
+      margin-left: 10px;
+    }
+  }
+}
+
+@keyframes introduce {
+  0% {
+    opacity: 0;
+    // transform: scale(0);
+  }
+}
+
+.loading {
+  transform: scale(0.5);
+}
+
+[data-theme="light"] .loading {
+  filter: invert(9%) sepia(15%) saturate(7%) hue-rotate(318deg) brightness(102%)
+    contrast(93%);
+  transition: filter 0.5s ease;
+}
+[data-theme="dark"] .loading {
+  filter: invert(100%) sepia(68%) saturate(38%) hue-rotate(155deg)
+    brightness(115%) contrast(90%);
+  transition: filter 0.5s ease;
+}

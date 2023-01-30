@@ -12,6 +12,8 @@ import {
   Home,
   FourZeroFour,
   About,
+  Experience,
+  Contact,
 } from "./pages/index";
 import "./App.css";
 
@@ -27,6 +29,8 @@ function App() {
         <Route element={<Template />}>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />}/>
+          <Route path="/experience" element={<Experience />}/>
         </Route>
         <Route path="*" element={<FourZeroFour />} />
       </Routes>

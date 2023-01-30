@@ -1,0 +1,82 @@
+.experiences-container {
+  .experiences-title {
+    text-align: center;
+    color: var(--font-color);
+    font-size: 36px;
+    transition: color 0.5s ease;
+    margin-bottom: 14px;
+  }
+}
+
+.download-container {
+  margin-top: 36px;
+  text-align: center;
+  .download-heading {
+    margin-bottom: 10px;
+    color: var(--font-color);
+    transition: color 0.5s ease;
+  }
+  .download-button {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--font-color);
+    color: var(--bg-color);
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 100px;
+    padding: 8px 16px;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.075);
+    }
+    transition: color 0.5s ease, background 0.5s ease, transform 0.1s ease;
+  }
+}
+
+.project-title {
+  margin-top: 50px;
+  font-size: 36px;
+  color: var(--font-color);
+  transition: color 0.5s ease;
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: -30px;
+  border: none;
+  border-radius: 17.5px;
+  height: 35px;
+  width: 130px;
+  background: var(--font-color);
+  color: var(--bg-color);
+  font-weight: 700;
+  font-size: 12px;
+  transition: transform 0.1s ease, color 0.5s ease, background 0.5s ease;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .experiences-container {
+    .experiences-title {
+      font-size: 26px;
+      margin-bottom: 22px;
+    }
+  }
+  .download-container {
+    margin-top: 3.5rem;
+    .download-heading {
+      font-size: 18px;
+    }
+  }
+  .project-title {
+    margin-top: 3rem;
+    font-size: 26px;
+  }
+}
