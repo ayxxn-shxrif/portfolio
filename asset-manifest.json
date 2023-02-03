@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.f495759a.css",
-    "main.js": "/Portfolio/static/js/main.1c64f538.js",
-    "static/js/787.c4e7f8f9.chunk.js": "/Portfolio/static/js/787.c4e7f8f9.chunk.js",
-    "static/media/me.jpg": "/Portfolio/static/media/me.444e16c1dabca2be9844.jpg",
-    "static/media/airbnb.png": "/Portfolio/static/media/airbnb.bf3479465f1b769a8f8a.png",
-    "static/media/Projects-Keeper.png": "/Portfolio/static/media/Projects-Keeper.60973361b5e1f1f18bda.png",
-    "static/media/face-recognition.png": "/Portfolio/static/media/face-recognition.90c249ed211979128488.png",
-    "static/media/BERT-CLASSIFICATION.png": "/Portfolio/static/media/BERT-CLASSIFICATION.78f12b851eed627a19a3.png",
-    "static/media/scraping-stackoverflow.png": "/Portfolio/static/media/scraping-stackoverflow.6ecdea4a45068f27eaac.png",
-    "static/media/Easy-CV.png": "/Portfolio/static/media/Easy-CV.1da4f48231a1b8838783.png",
-    "index.html": "/Portfolio/index.html",
-    "static/media/loading.svg": "/Portfolio/static/media/loading.9f992f3abc765093c281035647021654.svg",
-    "main.f495759a.css.map": "/Portfolio/static/css/main.f495759a.css.map",
-    "main.1c64f538.js.map": "/Portfolio/static/js/main.1c64f538.js.map",
-    "787.c4e7f8f9.chunk.js.map": "/Portfolio/static/js/787.c4e7f8f9.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.f495759a.css",
+    "main.js": "/portfolio/static/js/main.c2d67077.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/portfolio/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/me.jpg": "/portfolio/static/media/me.444e16c1dabca2be9844.jpg",
+    "static/media/airbnb.png": "/portfolio/static/media/airbnb.bf3479465f1b769a8f8a.png",
+    "static/media/Projects-Keeper.png": "/portfolio/static/media/Projects-Keeper.60973361b5e1f1f18bda.png",
+    "static/media/face-recognition.png": "/portfolio/static/media/face-recognition.90c249ed211979128488.png",
+    "static/media/BERT-CLASSIFICATION.png": "/portfolio/static/media/BERT-CLASSIFICATION.78f12b851eed627a19a3.png",
+    "static/media/scraping-stackoverflow.png": "/portfolio/static/media/scraping-stackoverflow.6ecdea4a45068f27eaac.png",
+    "static/media/Easy-CV.png": "/portfolio/static/media/Easy-CV.1da4f48231a1b8838783.png",
+    "index.html": "/portfolio/index.html",
+    "static/media/loading.svg": "/portfolio/static/media/loading.9f992f3abc765093c281035647021654.svg",
+    "main.f495759a.css.map": "/portfolio/static/css/main.f495759a.css.map",
+    "main.c2d67077.js.map": "/portfolio/static/js/main.c2d67077.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/portfolio/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f495759a.css",
-    "static/js/main.1c64f538.js"
+    "static/js/main.c2d67077.js"
   ]
 }
