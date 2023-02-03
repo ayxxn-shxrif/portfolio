@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "homepage": "https://ayxxn-shxrif.github.io/Portfolio",
+  "homepage": "https://ayxxn-shxrif.github.io/portfolio",
   "version": "0.1.0",
   "private": true,
   "proxy": "https://localhost:3000/",
