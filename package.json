@@ -1,5 +1,6 @@
 {
   "name": "client",
+  "homepage": "https://ayxxn-shxrif.github.io/Portfolio/",
   "version": "0.1.0",
   "private": true,
   "proxy": "https://localhost:3000/",
@@ -18,6 +19,7 @@
     "craco-plugin-scoped-css": "^1.1.1",
     "firebase": "^9.12.1",
     "framer-motion": "^7.5.3",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-cookie-consent": "^8.0.1",
     "react-dom": "^18.2.0",
@@ -31,6 +33,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+     "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
