@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import CookieConsent from "react-cookie-consent";
 
@@ -24,7 +24,7 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<Template />}>
           <Route index element={<Home />} />
@@ -55,7 +55,7 @@ function App() {
         This website uses cookies to save theme preferences. You can change
         themes by clicking the doodle on the top left.
       </CookieConsent>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
